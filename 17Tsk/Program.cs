@@ -28,7 +28,8 @@ namespace _17Tsk
             BanAcc<double> banAcc3 = new BanAcc<double>();
             Console.WriteLine("Введите номер счета");             
             double num3 = Convert.ToDouble(Console.ReadLine());
-            banAcc3.Write(num3);    
+            banAcc3.Write(num3);
+            Console.WriteLine();
             //Вывод результатов
             banAcc1.Read();            
             banAcc2.Read();            
@@ -45,6 +46,9 @@ namespace _17Tsk
         private T Num { get; set; }
         private double Bal { get; set; }
         private string Fio { get; set; }
+        public BanAcc()
+        {
+        }
         
         //Задаем метод записи
         public void Write(T num/*, double bal, string fio*/)
